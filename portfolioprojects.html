@@ -9,81 +9,6 @@
     
 </head>
 
-<style>
-
-.videos-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns for 3 videos */
-  gap: 30px;
-  justify-content: center;
-  padding: 40px;
-}
-
-/* Styling for Each Video Box */
-.video-container {
-  background: #100f24; /* Light gray background */
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Video Player Styling */
-.video-setting {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
-/* Title for Each Video */
-.video-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #008cff;
-  position: absolute;
-  top: -30px;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 700px) {
-  .videos-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .video-container {
-    width: 90%;
-    max-width: 400px;
-  }
-  .text-display{
-    position: absolute;
-    left: -740px;
-
-  }
-  .portolio-display{
-    position: absolute;
-    top: 15px;
-  }
-  .home-display{
-    position:absolute;
-    left: 130px;
-  }
-  .my-project{
-    position: absolute;
-    left:180px;
-  }
-}
-
-  
-
-
-
-
-
-</style>
-
 
 <body>
 
@@ -97,53 +22,53 @@
             </a>
       
             <ul class="nav nav-pills">
-              <li class="nav-item home-display"><a href="./" class="nav-link home-display" aria-current="page">Home</a></li>
-              <li class="nav-item my-project"><a href="#" class="nav-link active my-project">Projects</a></li>
+              <li class="nav-item"><a href="./" class="nav-link" aria-current="page">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link active">My Projects</a></li>
             </ul>
           </header>
         </div>
       </div>
 
-      <p style="position: absolute;left: 35px;"><b class="portolio-display">PORTFOLIO</b></p>
+      <p style="position: absolute;left: 35px;"><b>PORTFOLIO</b></p>
 
 
       <!-- BANNER OF MY PROJECTS -->
-      <div class="bg-body-tertiary border rounded-3 custom-bg-2" style="width: 400; ">
+      <div class="bg-body-tertiary border rounded-3 custom-bg-2" style="width: 400;">
         <br><br><br><br><br><br><br><br>
-        <p style="top: 150px;left: 856px;font-family:'Courier New', Courier, monospace;font-size:37px;color:#008cff;" class="text-display"><b class="text-display">MY PROJECTS</b></p>
+        <p style="position: absolute;top: 150px;left: 856px;font-family:'Courier New', Courier, monospace;font-size:37px;color:#008cff;"><b>MY PROJECTS</b></p>
       </div>
 
 
-      <div class="videos-wrapper">
-        <!-- FIRST VIDEO -->
-        <div class="video-container">
-          <p class="video-title">SMART ENERGY CONSUMPTION</p>
-          <video id="myVideo" class="video-setting" src="./Videos of projects/smart energy scheduler.mp4"></video>
-          <div class="controls">
-            <button id="playBtn" style="position: absolute;top: -43px;left: -25px;">Play</button>
-            <button id="pauseBtn" style="display: none;">Pause</button>
-          </div>
-        </div>
-      
-        <!-- SECOND VIDEO -->
-        <div class="video-container">
-          <p class="video-title">SPACE SHOOTER</p>
-          <video id="myVideo1" class="video-setting" src="./Videos of projects/GAMESFML.mp4"></video>
-          <div class="controls">
-            <button id="playBtn1" style="position: absolute;top: -43px;left: -25px;">Play</button>
-            <button id="pauseBtn1" style="display: none;">Pause</button>
-          </div>
-        </div>
-      
-        <!-- THIRD VIDEO -->
-        <div class="video-container">
-          <p class="video-title">FOOD ORDERING APPLICATION</p>
-          <video id="myVideo2" class="video-setting" src="./Videos of projects/Food Ordering application.mp4"></video>
-          <div class="controls">
-            <button id="playBtn2" style="position: absolute;top: -43px;left: -25px;">Play</button>
-            <button id="pauseBtn2" style="display: none;">Pause</button>
-          </div>
-        </div>
+      <!-- FIRST VIDEO CONTENTS AND ITS BANNER -->
+      <p style="position: absolute;top: 350px;left: 120px;color: #b5b6b7;">SMART ENERGY CONSUMPTION </p>
+      <div class="bg-body-tertiary border rounded-3 custom-bg-2" style="width: 600px;height: 500px;position:absolute;top: 400px;left: 26px;">
+       <video id="myVideo" src="./Videos of projects/smart energy scheduler.mp4" style="width: 560px;height: 580px;position: absolute;left: 18px;top: -40px;"></video>
+       <div class="controls">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn" style="display: none;">Pause</button>
+    </div>
+      </div>
+
+
+      <!-- SECOND VIDEO CONTENT AND ITS BANNER -->
+      <p style="position: absolute;top: 350px;left: 870px;color: #b5b6b7;">SPACE SHOOTER</p>
+      <div class="bg-body-tertiary border rounded-3 custom-bg-2" style="width: 600px;height: 500px;position:absolute;top: 400px;left: 660px;">
+
+        <video id="myVideo1" src="./Videos of projects/GAMESFML.mp4" style="width: 560px;height: 580px;position: absolute;left: 18px;top: -40px;"></video>
+        <div class="controls">
+          <button id="playBtn1">Play</button>
+          <button id="pauseBtn1" style="display: none;">Pause</button>
+      </div>
+      </div>
+
+      <!-- THIRD VIDEO CONTENT AND ITS BANNER -->
+      <p style="position: absolute;top: 350px;left: 1410px;color:#b5b6b7;">FOOD ORDERING APPLICATION</p>
+      <div class="bg-body-tertiary border rounded-3 custom-bg-2" style="width: 600px;height: 500px;position:absolute;top: 400px;left: 1290px;">
+        <video id="myVideo2" src="./Videos of projects/Food Ordering application.mp4  " style="width: 560px;height: 580px;position: absolute;left: 18px;top: -40px;"></video>
+        <div class="controls">  
+          <button id="playBtn2">Play</button>
+          <button id="pauseBtn2" style="display: none;">Pause</button>
+      </div>
       </div>
       
 
